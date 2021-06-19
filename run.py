@@ -40,10 +40,13 @@ def hasil(ngocok,ismylife):
 yeahh=random.choice(["Muhamad Badru","Muhamad Badru Wasih"])
 def logo():
 	os.system("clear")
-	print(f""_  _  _ _       _ _  _  _ 
- | . \| . \| | | _ |  \  \| . >| __>
- | | ||   /| ' ||_||     || . \| _> 
- |_/|\\`_'     |||||_/||
+	print(f""
+╔═══╦═══╦╗─╔╗──╔═╗╔═╦══╗╔═══╗V.1.1
+╚╗╔╗║╔═╗║║─║║──║║╚╝║║╔╗║║╔══╝
+─║║║║╚═╝║║─║║──║╔╗╔╗║╚╝╚╣╚══╗WA:08811403654
+─║║║║╔╗╔╣║─║╠══╣║║║║║╔═╗║╔══╝
+╔╝╚╝║║║╚╣╚═╝╠══╣║║║║║╚═╝║║
+╚═══╩╝╚═╩═══╝──╚╝╚╝╚╩═══╩╝FB:Fb.com/Bang.badru23
     -=[ Create By {yeahh} ]=-""")
 class about:
 	def __init__(self,url):
