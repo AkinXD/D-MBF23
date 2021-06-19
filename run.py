@@ -40,7 +40,7 @@ def hasil(ngocok,ismylife):
 yeahh=random.choice(["Muhamad Badru","Muhamad Badru Wasih"])
 def logo():
 	os.system("clear")
-	print(f"""         ╔═══╗──╔═╗╔═╦══╗╔═══╗
+	print(f"""╔═══╗──╔═╗╔═╦══╗╔═══╗
 ╚╗╔╗║──║║╚╝║║╔╗║║╔══╝
 ─║║║║──║╔╗╔╗║╚╝╚╣╚══╗
 ─║║║╠══╣║║║║║╔═╗║╔══╝
